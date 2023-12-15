@@ -6,304 +6,359 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <title>Poco</title>
+  <title>UNICON</title>
 </head>
 
 <body class="vh-100 d-flex flex-column">
-  <header class="bg-dark">
-    <section class="container d-flex flex-wrap mt-3 justify-content-between gap-5">
-      <a href="#" class="logo d-flex align-content-center my-5"><img src="assets/logo.svg" alt="logo" /></a>
-      <div class="header__top_nav list-unstyled d-flex mx-auto">
-        <nav class="navbar navbar-expand-lg navbar-dark container">
-          <section class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <header>
+    <section class="header__nav" id="home">
+      <section class="container d-flex pt-3 justify-content-between">
+        <ul class="header__logo list-unstyled d-flex mt-2">
+          <li class="mx-auto"><img src="assets/logo.png" alt="logo"></li>
+        </ul>
+        <section class="header__top_nav list-unstyled d-flex ms-auto">
+          <nav class="navbar navbar-expand-md navbar-light container">
+            <section class="container-fluid">
 
-            <section class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav d-flex gap-4">
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white" href="#home">
-                    <div class="btn-group">
-                      <div class="dropdown-toggle drop-item" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Home
-                      </div>
-                      <ul class="dropdown-menu">
-                        ...
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white drop-item" href="#pages">Menu
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white drop-item" href="#elements">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white" href="#home">
-                    <div class="btn-group">
-                      <div class="dropdown-toggle drop-item" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Shop
-                      </div>
-                      <ul class="dropdown-menu">
-                        ...
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white" href="#home">
-                    <div class="btn-group">
-                      <div class="dropdown-toggle drop-item" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Blog
-                      </div>
-                      <ul class="dropdown-menu">
-                        ...
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white" href="#home">
-                    <div class="btn-group">
-                      <div class="dropdown-toggle drop-item" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Page
-                      </div>
-                      <ul class="dropdown-menu">
-                        ...
-                      </ul>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text text-white" href="#portfolio">Contact</a>
-                </li>
-              </ul>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <section class="collapse navbar-collapse mms-auto" id="navbarNav">
+                <ul class="navbar-nav d-flex gap-2">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#features">FEATURES </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#elements">ELEMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#pages">PAGES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#portfolio">PORTFOLIO </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#carouselExampleIndicators">SHOP </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#blog">BLOG </a>
+                  </li>
+                </ul>
+              </section>
             </section>
-          </section>
-        </nav>
-      </div>
-      <ul class="header__icons ms-auto my-0 d-flex justify-content-center mt-5 gap-4">
-        <li class="text-white d-flex">
-          <i class="fas fa-motorcycle bike"></i>
-          <section class="d-flex flex-column">
-            <span>call and order in</span>
-            <span class="contact">+1 123-321-4321</span>
-          </section>
-        </li>
-        <li class="icons text-white">
-          <a href="" class="text-white"><i class="fas fa-user"></i></a>
-          <a href="" class="text-white"><i class="fas fa-heart"></i></a>
-          <a href="#" class="text-white"><i class="fas fa-shopping-basket"></i></a>
-        </li>
-      </ul>
-    </section>
-    <section class="banner">
-      <section class="container banner-content d-flex justify-content-end">
-        <section class="my-5">
-          <span>Buy one get one</span>
-          <h1>PIZZA TIME</h1>
-          <p>
-            Extra-virgin olive oil, garlic, mozzarella <br />
-            cheese, onions, mushrooms, green <br />
-            olives, black olives, fresh tomatoes.
-          </p>
-          <a href="#">ORDER NOW</a>
+          </nav>
         </section>
+        <ul class="header__icons my-0 mx-0 d-flex pt-2 list-unstyled justify-content-center gap-3">
+          <li><a href="#"><i class="fas fa-shopping-cart text-dark"></i></a></li>
+          <li><a href="#"><i class="fas fa-search text-dark"></i></a></li>
+        </ul>
+      </section>
+    </section>
+    <section class="banner" id="features">
+      <section class="content container">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section class="slide row">
+                <section class="col-md-6 col-12">
+                  <img src="assets/tab.png" alt="tab">
+                </section>
+                <section class="col-md-6 col-12 banner-text">
+                  <h1>POWERFUL</h1>
+                  <ul class="list-unstyled">
+                    <li>100% Responsive</li>
+                    <li> Retina Ready Graphics </li>
+                    <li>Page Builder with 50+ Elements </li>
+                    <li>Different Headers & Layouts </li>
+                    <li>High Quality Code </li>
+                    <li>One-Click Installation</li>
+                  </ul>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="slide row">
+                <section class="col-md-6 col-12">
+                  <img src="assets/tab.png" alt="tab">
+                </section>
+                <section class="col-md-6 col-12 banner-text">
+                  <h1>POWERFUL</h1>
+                  <ul class="list-unstyled">
+                    <li>100% Responsive</li>
+                    <li> Retina Ready Graphics </li>
+                    <li>Page Builder with 50+ Elements </li>
+                    <li>Different Headers & Layouts </li>
+                    <li>High Quality Code </li>
+                    <li>One-Click Installation</li>
+                  </ul>
+                </section>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="slide row">
+                <section class="col-md-6 col-12">
+                  <img src="assets/tab.png" alt="tab">
+                </section>
+                <section class="col-md-6 col-12 banner-text">
+                  <h1>POWERFUL</h1>
+                  <ul class="list-unstyled">
+                    <li>100% Responsive</li>
+                    <li> Retina Ready Graphics </li>
+                    <li>Page Builder with 50+ Elements </li>
+                    <li>Different Headers & Layouts </li>
+                    <li>High Quality Code </li>
+                    <li>One-Click Installation</li>
+                  </ul>
+                </section>
+              </section>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <i class="fas fa-chevron-left text-dark carousel-icon"></i>
+          <span class="visually-hidden text-dark">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <i class="fas fa-chevron-right text-dark carousel-icon"></i>
+          <span class="visually-hidden ">Next</span>
+        </button>
+          
       </section>
     </section>
   </header>
   <main>
-    <section class="hero container">
-      <section class="row">
-        <section class="hero-card-1 col-5">
-          <span>american</span>
-          <h2>Burger</h2>
-          <span class="mb-5 d-block">* one phone call away</span>
-          <a href="#">HOT & SPICY</a>
+    <section class="portfolio d-flex container flex-wrap justify-content-center" id="elements">
+      <section class="item border-0 d-flex">
+        <img src="assets/brand_identity.png" alt="brand" height="100" width='100' class="d-inline-block">
+        <section class="card-content">
+          <h2>Brand Identity</h2>
+          <p>Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh.</p>
+          <a href="#">TAKE A TOUR <i class="fas fa-caret-right"></i></a>
         </section>
-        <section class="hero-card col-4">
-          <section class="card-1">
-            <span>good</span>
-            <h2>food</h2>
-            <span class="mb-5 d-block">* one phone call away</span>
-            <a href="#">ORDER NOW</a>
-          </section>
-          <section class="card-2">
-            <span>good</span>
-            <h2>food</h2>
-            <span class="mb-5 d-block">* one phone call away</span>
-            <a href="#">ORDER NOW</a>
-          </section>
+      </section>
+      <section class="item border-0 d-flex">
+        <img src="assets/webdesigning.png" alt="brand" height="100" width='100' class="d-inline-block">
+        <section class="card-content">
+          <h2> Web Design & UI </h2>
+          <p>Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh.</p>
+          <a href="#">TAKE A TOUR <i class="fas fa-caret-right"></i></a>
         </section>
-        <section class="hero-card-1 col-3">
-          <span class="ps-0 ps-sm-4">american</span>
-          <h2 class="ps-0 ps-sm-5">Burger</h2>
-          <span class="ps-0 mb-5 d-block ps-sm-5">* one phone call away</span>
-          <a href="#" class="ms-0 ms-sm-5">HOT & SPICY</a>
+      </section>
+      <section class="item border-0 d-flex">
+        <img src="assets/development.png" alt="brand" height="100" width='100' class="d-inline-block">
+        <section class="card-content">
+          <h2>Development & CMS</h2>
+          <p>Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh.</p>
+          <a href="#">TAKE A TOUR <i class="fas fa-caret-right"></i></a>
         </section>
       </section>
     </section>
-    <section class="container services my-5 d-flex flex-wrap flex-md-nowrap gap-md-5 gap-0">
-      <section class="service-item d-flex my-5">
-        <i class="fas fa-biking"></i>
-        <section>
-          <h3>Freee shipping</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-      </section>
-      <section class="service-item d-flex my-5">
-        <i class="fas fa-biking"></i>
-        <section>
-          <h3>Freee shipping</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-      </section>
-      <section class="service-item d-flex my-5">
-        <i class="fas fa-biking"></i>
-        <section>
-          <h3>Freee shipping</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-      </section>
-    </section>
-    <section class="container">
-      <h2 class="dishes-heading">Papular Dishes</h2>
-      <section class="dishes  d-flex flex-wrap flex-lg-nowrap">
-      <section class="dishes-card p-5">
-        <section class="d-flex align-content-center justify-content-center"><img src="assets/water-removebg-preview.png"
-            alt="water" class=""></section>
-        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-            class="fas fa-star"></i><i class="far fa-star"></i></div>
-        <h3>Water Bottel</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda!</p>
-        <div class="d-flex justify-content-between"><strong>$10.8</strong><i class="fas fa-shopping-basket"></i></div>
-        <section class="baground-color"></section>
-      </section>
-      <section class="dishes-card p-5">
-        <section class="d-flex align-content-center justify-content-center"><img src="assets/water-removebg-preview.png"
-            alt="water" class=""></section>
-        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-            class="fas fa-star"></i><i class="far fa-star"></i></div>
-        <h3>Water Bottel</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda!</p>
-        <div class="d-flex justify-content-between"><strong>$10.8</strong><i class="fas fa-shopping-basket"></i></div>
-        <section class="baground-color"></section>
-      </section>
-      <section class="dishes-card p-5">
-        <section class="d-flex align-content-center justify-content-center"><img src="assets/water-removebg-preview.png"
-            alt="water" class=""></section>
-        <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-            class="fas fa-star"></i><i class="far fa-star"></i></div>
-        <h3>Water Bottel</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, assumenda!</p>
-        <div class="d-flex justify-content-between"><strong>$10.8</strong><i class="fas fa-shopping-basket"></i></div>
-        <section class="baground-color"></section>
-      </section>
-    </section>
-  </section>
-  <section class="latestnews container">
-    <h2>Latest news</h2>
-    <section class="cards d-flex gap-5 my-5">
-      <div class="card" >
-        <img src="assets/burger.jpeg" class="card-img-top" alt="card">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-warning">READ MORE</a>
-        </div>
+    <figure class="gallery w-100" id="pages">
+      <img src="./assets/pot.jpg" alt="gallery" class="w-25">
+      <img src="./assets/newspaper.jpg" alt="gallery" class="w-25">
+      <img src="./assets/tab2.jpg" alt="gallery" class="w-25">
+      <img src="./assets/visting-card.jpg" alt="gallery" class="w-25">
+    </figure>
+    <section class="stats row container-fluid mx-0" id="portfolio">
+      <div class="d-flex flex-column col-md-3 col-sm-6 col-xs-12">
+        <h2 class="display-4 text-white">39</h2>
+        <span class="stats__text">Awards won</span>
       </div>
-      <div class="card" >
-        <img src="assets/burger.jpeg" class="card-img-top" alt="card">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-warning">READ MORE</a>
-        </div>
+      <div class="d-flex flex-column col-md-3 col-sm-6 col-xs-12">
+        <h2 class="display-4 text-white">268</h2>
+        <span class="stats__text">cups of coffee</span>
       </div>
-      <div class="card">
-        <img src="assets/burger.jpeg" class="card-img-top" alt="card">
-        <div class="card-body">
-          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-warning">READ MORE</a>
-        </div>
+      <div class="d-flex flex-column col-md-3 col-sm-6 col-xs-12">
+        <h2 class="display-4 text-white">92</h2>
+        <span class="stats__text">customers</span>
+      </div>
+      <div class="d-flex flex-column col-md-3 col-sm-6 col-xs-12">
+        <h2 class="display-4 text-white">174</h2>
+        <span class="stats__text">tweets</span>
       </div>
     </section>
-  </section> 
-  </main>
-  <footer class="footer mt-auto">
-    <div class="footer-top">
-      <img src="assets/logo.svg" alt="footer logo" width="150" height="150">
-      <div class="grid mt-2 footer-top__grid">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-6 col-sm-12 footer-card">
-              <h2 class="footer-card__heading">ADDRESS</h2>
-              <address class="footer-card__description">570 8th Ave, New York, NY 10018 United States</address>
+    <section id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+           <div class="px-4 py-5 my-5 text-center">
+            <h3 class="fw-bold mb-4">WHAT OUR CLIENTS SAY</h3>
+            <div class="col-lg-9 mx-auto">
+              <p class="lead mb-4 clients-para">Lorem ipsum dolor sit amet, consetetur sadipiscing elitr, sed diam nonumy tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sancus est Lorem ipsum solor sit amet.</p>
+              <p class="clients-subpara">- Duxee Inc.</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 footer-card">
-              <h2 class="footer-card__heading">BOOK A TABLE</h2>
-              <p class="footer-card__description">Dogfood och Sliders foodtruck.</p>
-              <p class="footer-card__description mb-3">Under om oss kan ni läsa</p>
-              <a href="tel:(850) 435-4155" class="footer-card__telephone">(850) 435-4155</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+           <div class="px-4 py-5 my-5 text-center">
+            <h3 class="fw-bold mb-4">WHAT OUR CLIENTS SAY</h3>
+            <div class="col-lg-9 mx-auto">
+              <p class="lead mb-4 clients-para">Lorem ipsum dolor sit amet, consetetur sadipiscing elitr, sed diam nonumy tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sancus est Lorem ipsum solor sit amet.</p>
+              <p class="clients-subpara">- Duxee Inc.</p>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 footer-card">
-              <h2 class="footer-card__heading">OPENING HOURS</h2>
-              <p class="footer-card__description">Monday - Friday: <span class="text-white">8am - 4pm</span></p>
-              <p class="footer-card__description">Saturday: <span class="text-white">9am - 5pm</span></p>
-              <ul class="footer-card__socials list-unstyled mt-3">
-                <li class="footer-card__socials-item">
-                  <div class="footer-card_socials-item_wrap"><a href="#" class="text-dark"><i
-                        class="fa-brands fa-facebook"></i></a></div>
-                </li>
-                <li class="footer-card__socials-item">
-                  <div class="footer-card_socials-item_wrap"><a href="#" class="text-dark"><i
-                        class="fa-brands fa-twitter"></i></a></div>
-                </li>
-                <li class="footer-card__socials-item">
-                  <div class="footer-card_socials-item_wrap"><a href="#" class="text-dark"><i
-                        class="fa-brands fa-youtube"></i></a></div>
-                </li>
-                <li class="footer-card__socials-item">
-                  <div class="footer-card_socials-item_wrap"><a href="#" class="text-dark"><i
-                        class="fa-brands fa-wordpress"></i></a></div>
-                </li>
-              </ul>
-              <p></p>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 footer-card">
-              <h2 class="footer-card__heading">NEWSLETTER</h2>
-              <p class="footer-card__description">Subscribe to the weekly newsletter for all the latest updates</p>
-              <form action="#" class="mt-4">
-                <div class="input-group mb-3 footer-card__input-group">
-                  <input type="text" class="form-control footer-card__form-control" placeholder="Your Email ..."
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn footer-card__button" type="button" id="button-addon2">SUBSCRIBE</button>
-                </div>
-              </form>
+          </div>
+        </div>
+        <div class="carousel-item">
+           <div class="px-4 py-5 my-5 text-center">
+            <h3 class="fw-bold mb-4">WHAT OUR CLIENTS SAY</h3>
+            <div class="col-lg-9 mx-auto">
+              <p class="lead mb-4 clients-para">Lorem ipsum dolor sit amet, consetetur sadipiscing elitr, sed diam nonumy tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sancus est Lorem ipsum solor sit amet.</p>
+              <p class="clients-subpara">- Duxee Inc.</p>
             </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
+  <footer class="footer" id="blog">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h4 class="logo-text mb-4">
+                        <img src="assets/U-logo.png" alt="footer u logo" width="38" height="43">
+                    </h4>
+                    <p class="footer-para">
+                        Lorem ipsum dolor sit amet, consectetur sadipiscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h4 class="footer-heading d-flex align-items-center">
+                        <span class="icon d-flex align-items-center justify-content-center mb-5"></span>LATEST NEWS
+                    </h4>
+                    <ul class="list-unstyled footer-text">
+                        <li>
+                            <a href="#">
+                                <div class="d-flex justify-content-between align-items-center footer-news-item">
+                                    <p class="footer-news-item-para">Trends in UX Design</p>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="d-flex justify-content-between align-items-center footer-news-item">
+                                    <p class="footer-news-item-para">The little Person inside</p>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="d-flex justify-content-between align-items-center footer-news-item">
+                                    <p class="footer-news-item-para">Inspirational Quote</p>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="d-flex justify-content-between align-items-center footer-news-item">
+                                    <p class="footer-news-item-para">The Exploration</p>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h4 class="footer-heading d-flex align-items-center">
+                        <span class="icon d-flex align-items-center justify-content-center mb-5"></span>RECENT PROJECTS
+                    </h4>
+                    <div class="block-24">
+                        <div class="row no-gutters">
+                            <div class="col-4 col-md-4 p-1">
+                                <a href="#" class="footer-img" style="background-image: url(./assets/pot.jpg)"></a>
+                            </div>
+                            <div class="col-4 col-md-4 p-1">
+                                <a href="#" class="footer-img" style="background-image: url(assets/newspaper.jpg)"></a>
+                            </div>
+                            <div class="col-4 col-md-4 p-1">
+                                <a href="#" class="footer-img" style="background-image: url(./assets/tab2.jpg)"></a>
+                            </div>
+                            <div class="col-4 col-md-4 p-1">
+                                <a href="#" class="footer-img"
+                                    style="background-image: url(assets/visting-card.jpg)"></a>
+                            </div>
+                            <div class="col-4 col-md-4 p-1">
+                                <a href="#" class="footer-img"
+                                    style="background-image: url(./assets/visting-card.jpg)"></a>
+                            </div>
+                            <div class="col-4 col-md-4 p-1">
+                                <a href="#" class="footer-img" style="background-image: url(assets/pot.jpg)"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h4 class="footer-heading d-flex align-items-center">
+                        <span class="icon d-flex align-items-center justify-content-center mb-5"></span>CONTACT INFO
+                    </h4>
+                    <div class="footer-socials">
+                        <span class="py-2">
+                            <i class="fas fa-map-marker me-3"></i>
+                            <a href="#" class="footer-socials-link">732/21 Second Street Manchester United Kingdom</a>
+                        </span>
+                        <span class="py-2">
+                            <i class="fas fa-phone me-3"></i>
+                            <a href="#" class="footer-socials-link">345-677-554</a>
+                        </span>
+                        <span class="py-2">
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="#" class="footer-socials-link">info@yoursite.com</a>
+                        </span>
+                        <span class="py-2">
+                            <i class="fas fa-globe me-3"></i>
+                            <a href="#" class="footer-socials-link">mintithemes.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">
-        Copyright &copy; 2022 <span class="footer__highlight">pocofood</span>. All Rights Reserved.
-      </div>
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="footer-copy">
+                    &copy; 2019 Unicorn
+                </div>
+                <div class="footer-bottom-list">
+                    <ul class="list-unstyled d-flex align-items-center mb-0">
+                        <li>
+                            <a href="#" class="footer-bottom-link"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-bottom-link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-bottom-link"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-bottom-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-bottom-link"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
