@@ -23,6 +23,17 @@ body{
 }
 .nav-link{
   border-bottom: 2px solid transparent;
+  color: #777777;
+}
+.header__icons li a{
+  color: #777777;
+}
+.header__icons li{
+  margin-top: 0.7rem;
+}
+.fa-shopping-cart{
+  padding-left: 2rem;
+  border-left: 2px solid #777777;
 }
 @media screen and (max-width:480px) {
   .header__logo{
